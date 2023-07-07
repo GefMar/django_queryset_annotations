@@ -17,6 +17,11 @@ show_source = true
 statistics = true
 inline_quotes = "double"
 
+[tool.mypy]
+ignore_missing_imports = true
+implicit_optional = true
+
+
 [tool.flakeheaven.plugins]
 "*" = [
     "+*", # enable all plugins

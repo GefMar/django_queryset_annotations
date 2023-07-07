@@ -1,0 +1,1 @@
+# django_queryset_annotations

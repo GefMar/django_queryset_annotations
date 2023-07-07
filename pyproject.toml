@@ -85,6 +85,11 @@ implicit_optional = true
     "-WPS347",
     "-WPS412",
 ]
+[tool.flakeheaven.exceptions."*/meta.py"]
+"*" = [
+    "-WPS608",
+    "-WPS613",
+]
 
 [tool.flakeheaven.exceptions."*.md"]
 "*" = [

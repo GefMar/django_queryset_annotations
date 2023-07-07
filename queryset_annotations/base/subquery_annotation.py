@@ -25,4 +25,7 @@ class SubqueryAnnotation(BaseAnnotation, ABC):
         ...  # noqa: WPS428
 
     def get_expression(self) -> models.Subquery:
-        return models.Subquery(self.queryset.filter(*self.filters).values(self.output_field_name)[:1])
+        return models.Subquery(
+            self.queryset.filter(*self.filters).values(self.output_field_name)[:1],
+            output_field=self.output_field,
+        )

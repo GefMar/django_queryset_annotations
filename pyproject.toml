@@ -17,6 +17,11 @@ show_source = true
 statistics = true
 inline_quotes = "double"
 
+[tool.mypy]
+ignore_missing_imports = true
+implicit_optional = true
+
+
 [tool.flakeheaven.plugins]
 "*" = [
     "+*", # enable all plugins
@@ -79,6 +84,11 @@ inline_quotes = "double"
     "-WPS440", # Found block variables overlap: *
     "-WPS347",
     "-WPS412",
+]
+[tool.flakeheaven.exceptions."*/meta.py"]
+"*" = [
+    "-WPS608",
+    "-WPS613",
 ]
 
 [tool.flakeheaven.exceptions."*.md"]

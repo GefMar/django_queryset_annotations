@@ -1,8 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "queryset_annotations"
+version = "1.1.0"
+description = "Django Smart Queryset Annotations"
+readme = "README.md"
+authors = [
+    { name = "Sergei (Gefest) Romanchuk" }
+]
+license = { file = "LICENSE" }
+urls = { homepage = "https://github.com/GefMar/django_queryset_annotations" }
+classifiers = [
+    "License :: OSI Approved :: MIT License"
+]
+
 [tool.isort]
-line_length = "119"
-multi_line_output = "3"
-include_trailing_comma = "true"
-skip = "migrations"
+line_length = 119
+multi_line_output = 3
+include_trailing_comma = true
 
 [tool.black]
 line-length = 120
@@ -89,6 +105,7 @@ implicit_optional = true
 "*" = [
     "-WPS608",
     "-WPS613",
+    "-N804",
 ]
 
 [tool.flakeheaven.exceptions."*.md"]

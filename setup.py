@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 install_requires = ("Django>=4.2",)
 setup(
     name="queryset_annotations",
-    version="1",
+    version="1.1.0",
     description="Django Smart Queryset Annotations",
     url="https://github.com/GefMar/django_queryset_annotations",
     author="Sergei (Gefest) Romanchuk",

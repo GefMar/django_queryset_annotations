@@ -10,3 +10,7 @@ class BaseProxyModel(metaclass=MetaProxyModel):
 
     class Meta:
         abstract = True
+
+        @property
+        def model(self):
+            raise NotImplementedError

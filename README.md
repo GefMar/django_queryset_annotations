@@ -7,7 +7,7 @@ The `django_queryset_annotations` library provides a way to add annotations to D
 You can install `django_queryset_annotations` via pip:
 
 ```bash
-pip install django_queryset_annotations
+pip install queryset-annotations
 ```
 
 ## Usage
